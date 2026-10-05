@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/ejercicio1.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+        let h1 = crearNodoConTexto("h1", "Julio César");
+        let p = crearNodoConTexto("p", "Julio César fue un importante, militar, escritor romano. Es una de las figuras más conocidas de la historia de Roma.");
+
+        adicionalElemntoABody(h1);
+        adicionalElemntoABody(p);
+
+        let h2 = crearNodoConTexto("h2", "¿Quién fue Julio César?");
+        let p2 = crearNodoConTexto("p2", "Julio César nació en el año 100 a. C. y tuvo un papel fundamental en la transformación de la República romana en el Imperio romano. Fue un destacado general y político, conocido por sus conquistas militares y su influencia en la política romana. Entre sus principales logros");
+
+        adicionalElemntoABody(h2);
+        adicionalElemntoABody(p2);
+
+
+
+        let h3 = crearNodoConTexto("h3", "Principales logros");
+        adicionalElemntoABody(h3);
+
+        
+        let ul = crearElemento("ul");
+        let li = crearNodoConTexto("li", "Conquistó gran parte de la Galia.");
+        let liDos = crearNodoConTexto("li", "Fue un destacado líder militar.");
+        let liTres = crearNodoConTexto("li", "Realizó importantes reformas políticas.");
+        let liCuatro = crearNodoConTexto("li", "Contribuyó al desarrollo del calendario juliano.");
+
+        adicionalElementoAContenedor(li, ul);
+        adicionalElementoAContenedor(liDos, ul);
+        adicionalElementoAContenedor(liTres, ul);
+        adicionalElementoAContenedor(liCuatro, ul);
+
+        adicionalElemntoABody(ul);
+
+    </script>
+
+
+
+</body>
+
+</html>
